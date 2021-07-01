@@ -15,34 +15,22 @@
 minimal_mistakes_skin    : "dark" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
 # Site Settings
-locale                   : "en-US"
-title                    : 노트
+locale                   : "ko-KR"
+title                    : "NOTE"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
-description              : 개인 정리용
+description              : "개인 정리용"
 url                      : "https://Lee1729.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 search                   : true
-# breadcrumbs            : false # true, false (default)
+breadcrumbs            : true
 words_per_minute         : 200
 comments:
-  provider               : # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
+  provider               : "disqus", # "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
-  discourse:
-    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
-  facebook:
-    # https://developers.facebook.com/docs/plugins/comments
-    appid                :
-    num_posts            : # 5 (default)
-    colorscheme          : # "light" (default), "dark"
-  utterances:
-    theme                : # "github-dark"
-    issue_term           : # "pathname" (default)
-  staticman:
-    branch               : # "master"
-    endpoint             : # "https://{your Staticman v3 API}/v3/entry/github/"
+    shortname            : gggz # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+    
 reCaptcha:
   siteKey                :
   secret                 :
@@ -99,25 +87,10 @@ author:
 
 
 # Site Footer
-footer:
-  links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      # url:
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
+#footer:
+  #links:
+    #- label: "Twitter"
+   #   icon: "fab fa-fw fa-twitter-square"
       # url:
 
 
@@ -257,7 +230,13 @@ defaults:
       author_profile: true
       read_time: false
       comments: true
-        provider : "disqus"
-          shortname : #
       share: true
       related: true
+      
+  # _pages
+  - scope:
+      path: "_pages"
+      type: pages
+    values:
+      layout: single
+      author_profile: true
