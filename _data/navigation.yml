@@ -1,11 +1,9 @@
 # main links
 main:
   - title: "Home"
-    url: /year-archive/
+    url: https://lee1729.github.io/
   - title: "Category"
     url : /categories/
-  - title: "Tags"
-    url: /tags/    
   # - title: "About"
   #   url: https://mmistakes.github.io/minimal-mistakes/about/
   # - title: "Sample Posts"
