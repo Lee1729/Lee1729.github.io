@@ -13,7 +13,7 @@ main:
   # - title: "Sitemap"
   #   url: /sitemap/
   
-posts:
+pages:
   - title: rr
     children:
       - title: "rr"
