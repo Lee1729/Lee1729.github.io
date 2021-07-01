@@ -14,3 +14,9 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
+  
+posts:
+  - title: rr
+    children:
+      - title: "rr"
+        url: /categories/#rr
